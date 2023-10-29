@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Ultimate Member - Math Captcha in Register form\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-28 21:51+0000\n"
-"PO-Revision-Date: 2023-10-29 10:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Unknown\n"
-"Language: zxx\n"
+"PO-Revision-Date: 2023-10-29 12:14+0000\n"
+"Last-Translator: Denis Baran\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,24 +17,32 @@ msgstr ""
 "X-Domain: um-math-captcha\n"
 "X-Loco-Parser: loco_parse_po"
 
+#. Description of the plugin
+msgid "Adds the Math Captcha field to the registration form."
+msgstr "Fügt dem Registrierungsformular das Mathe-Captcha-Feld hinzu."
+
 #. Author URI of the plugin
-msgid "http://ultimatemember.com/"
+msgid "https://github.com/umdevelopera"
 msgstr ""
 
-#: includes/class-um-math-captcha.php:107
+#. URI of the plugin
+msgid "https://github.com/umdevelopera/um-math-captcha"
+msgstr ""
+
+#: includes/class-um-math-captcha.php:117
 msgid "Incorrect answer. Please try again."
 msgstr "Falsche Antwort. Bitte nochmal versuchen!"
 
-#: includes/class-um-math-captcha.php:105
+#: includes/class-um-math-captcha.php:115
 msgid "Math Captcha is required."
 msgstr "Mathe-Captcha ist erforderlich."
 
-#: includes/class-um-math-captcha.php:70
+#: includes/class-um-math-captcha.php:79
 msgid "Solve this simple Math: "
-msgstr "Lösen Sie diese einfache Rechnung:"
+msgstr "Lösen Sie diese einfache Rechnung: "
 
 #. %s - plugin name.
-#: um-math-captcha.php:39
+#: um-math-captcha.php:46
 #, php-format
 msgid ""
 "The <strong>%s</strong> extension requires the Ultimate Member plugin to be "
@@ -45,18 +53,14 @@ msgstr ""
 " Erweiterung richtig funktioniert. Du kannst es <a href=\"https://wordpress."
 "org/plugins/ultimate-member\">hier</a> herunterladen."
 
-#. Description of the plugin
-msgid "This plugin adds math challenge in the Register forms"
-msgstr "Dieses Plugin fügt Rechenaufgaben in das Registrier-Formular ein."
+#. Name of the plugin
+msgid "Ultimate Member - Math Captcha"
+msgstr ""
 
 #. Author of the plugin
-msgid "Ultimate Member"
+msgid "umdevelopera"
 msgstr ""
 
-#. Name of the plugin
-msgid "Ultimate Member - Math Captcha in Register form"
-msgstr ""
-
-#: includes/class-um-math-captcha.php:78
+#: includes/class-um-math-captcha.php:82
 msgid "Your answer..."
 msgstr "Ihre Antwort..."

@@ -1,23 +1,20 @@
 <?php
 /**
- * Plugin Name: Ultimate Member - Math Captcha in Register form
- * Plugin URI:  https://github.com/ultimatemember/Extended/tree/main/um-math-captcha
- * Description: This plugin adds Math Captcha field to the registration form.
- *
- * Author:     Ultimate Member
- * Author URI: http://ultimatemember.com/
- * License:    GPL v2 or later
- *
+ * Plugin Name: Ultimate Member - Math Captcha
+ * Plugin URI:  https://github.com/umdevelopera/um-math-captcha
+ * Description: Adds the Math Captcha field to the registration form.
+ * Author:      umdevelopera
+ * Author URI:  https://github.com/umdevelopera
  * Text Domain: um-math-captcha
  * Domain Path: /languages
  *
- * Version: 1.1.0
- * UM version: 2.7.0
- *
  * Requires at least: 5.5
  * Requires PHP: 5.6
+ * UM version: 2.7.0
+ * Version: 1.1.0
  *
- * @package UM
+ * @license GPL-2.0-or-later
+ * @package UM Extended
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -56,14 +53,3 @@ if ( ! function_exists( 'um_math_captcha_check_dependencies' ) ) {
 	}
 }
 add_action( 'plugins_loaded', 'um_math_captcha_check_dependencies', 2 );
-
-
-// Loads a plugin's translated strings.
-if ( ! function_exists( 'um_math_captcha_plugins_loaded' ) ) {
-	function um_math_captcha_plugins_loaded() {
-		$locale = ( get_locale() !== '' ) ? get_locale() : 'en_US';
-		load_textdomain( um_math_captcha_textdomain, WP_LANG_DIR . '/plugins/' . um_math_captcha_textdomain . '-' . $locale . '.mo' );
-		load_plugin_textdomain( um_math_captcha_textdomain, false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-	}
-}
-add_action( 'plugins_loaded', 'um_math_captcha_plugins_loaded', 6 );

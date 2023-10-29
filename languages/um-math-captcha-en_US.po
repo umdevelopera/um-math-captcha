@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Ultimate Member - Math Captcha in Register form\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-28 21:51+0000\n"
-"PO-Revision-Date: 2023-10-28 21:52+0000\n"
+"PO-Revision-Date: 2023-10-29 12:13+0000\n"
 "Last-Translator: Denis Baran\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -15,24 +15,32 @@ msgstr ""
 "X-Loco-Version: 2.6.6; wp-6.4-RC2\n"
 "X-Domain: um-math-captcha"
 
-#. Author URI of the plugin
-msgid "http://ultimatemember.com/"
+#. Description of the plugin
+msgid "Adds the Math Captcha field to the registration form."
 msgstr ""
 
-#: includes/class-um-math-captcha.php:107
+#. Author URI of the plugin
+msgid "https://github.com/umdevelopera"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/umdevelopera/um-math-captcha"
+msgstr ""
+
+#: includes/class-um-math-captcha.php:117
 msgid "Incorrect answer. Please try again."
 msgstr ""
 
-#: includes/class-um-math-captcha.php:105
+#: includes/class-um-math-captcha.php:115
 msgid "Math Captcha is required."
 msgstr ""
 
-#: includes/class-um-math-captcha.php:70
+#: includes/class-um-math-captcha.php:79
 msgid "Solve this simple Math: "
 msgstr ""
 
 #. %s - plugin name.
-#: um-math-captcha.php:39
+#: um-math-captcha.php:46
 #, php-format
 msgid ""
 "The <strong>%s</strong> extension requires the Ultimate Member plugin to be "
@@ -40,18 +48,14 @@ msgid ""
 "org/plugins/ultimate-member\">here</a>"
 msgstr ""
 
-#. Description of the plugin
-msgid "This plugin adds math challenge in the Register forms"
+#. Name of the plugin
+msgid "Ultimate Member - Math Captcha"
 msgstr ""
 
 #. Author of the plugin
-msgid "Ultimate Member"
+msgid "umdevelopera"
 msgstr ""
 
-#. Name of the plugin
-msgid "Ultimate Member - Math Captcha in Register form"
-msgstr ""
-
-#: includes/class-um-math-captcha.php:78
+#: includes/class-um-math-captcha.php:82
 msgid "Your answer..."
 msgstr ""

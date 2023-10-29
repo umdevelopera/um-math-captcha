@@ -7,7 +7,7 @@ __Note:__ This is a free extension created for the community. The Ultimate Membe
 __Note:__ This is an update of the "Ultimate Member - Math Captcha in Register forms" extension in the [Extended](https://github.com/ultimatemember/Extended/tree/main) package.
 
 ## Key features
-- Displays the Math Captcha field in the registration form.
+- Adds the Math Captcha field to the registration form.
 
 ## Installation
 
@@ -21,7 +21,7 @@ Open git bash, navigate to the plugins folder and execute this command:
 Once the plugin is cloned, enter your site admin dashboard and go to _wp-admin > Plugins > Installed Plugins_. Find the "Ultimate Member - Math Captcha" plugin and click the "Activate" link.
 
 ### How to install from ZIP archive
-You can install this plugin from the [ZIP file](https://drive.google.com/file/d/1gLBbclH1Yrmh78BwVsq7MdL4Pa3_D57g/view?usp=sharing) as any other plugin. Follow [this instruction](https://wordpress.org/support/article/managing-plugins/#upload-via-wordpress-admin).
+You can install this plugin from the [ZIP file](https://drive.google.com/file/d/1qd0rQXfRG8hZ2SPCGbtUHKoP3j7s_uWL/view?usp=sharing) as any other plugin. Follow [this instruction](https://wordpress.org/support/article/managing-plugins/#upload-via-wordpress-admin).
 
 ## How to use
 

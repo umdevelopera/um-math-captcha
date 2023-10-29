@@ -62,6 +62,7 @@ class UM_Math_Captcha {
 
 		add_action( 'um_after_register_fields', array( $this, 'add_field' ), 10, 1 );
 		add_action( 'um_submit_form_errors_hook__registration', array( $this, 'validate' ), 10, 2 );
+		add_action( 'plugins_loaded', array( $this, 'textdomain' ), 9 );
 	}
 
 
@@ -115,6 +116,16 @@ class UM_Math_Captcha {
 		} elseif ( ! $this->cpa->validate( $post_form[ $this->key ] ) ) {
 			UM()->form()->add_error( $this->key, __( 'Incorrect answer. Please try again.', 'um-math-captcha' ) );
 		}
+	}
+
+
+	/**
+	 * Loads a plugin's translated strings.
+	 */
+	public function textdomain() {
+		$locale = get_locale() ? get_locale() : 'en_US';
+		load_textdomain( um_math_captcha_textdomain, WP_LANG_DIR . '/plugins/' . um_math_captcha_textdomain . '-' . $locale . '.mo' );
+		load_plugin_textdomain( um_math_captcha_textdomain, false, dirname( um_math_captcha_plugin ) . '/languages/' );
 	}
 
 }
