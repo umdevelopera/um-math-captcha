@@ -4,13 +4,11 @@ Author: umdevelopera
 Author URI: https://github.com/umdevelopera
 Plugin URI: https://github.com/umdevelopera/um-math-captcha
 Tags: ultimate member, math captcha, registration
-
 Requires at least: 5.5
-Tested up to: 6.3.2
+Tested up to: 6.6.2
 Requires UM core at least: 2.6.8
-Tested UM core up to: 2.7.0
+Tested UM core up to: 2.8.9
 Stable tag: 1.1.0
-
 License: GNU Version 2 or Any Later Version
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
 
@@ -26,10 +24,13 @@ Math Captcha allows you to use simple math problems for users to prove their hum
 
 This is a free extension created for the community. The Ultimate Member team does not provide any support for this extension. Open new issue in the GitHub repository if you face a problem: https://github.com/umdevelopera/um-math-captcha/issues
 
+Documentation is the README section in the GitHub repository: https://github.com/umdevelopera/um-math-captcha
+
 == Installation ==
 
-Download ZIP file from GitHub or Google Drive. You can find download links here: https://github.com/umdevelopera/um-math-captcha
 You can install this plugin from the ZIP file as any other plugin. Follow this instruction: https://wordpress.org/support/article/managing-plugins/#upload-via-wordpress-admin
+
+Download ZIP file from GitHub or Google Drive. You can find download links here: https://github.com/umdevelopera/um-math-captcha
 
 == Changelog ==
 

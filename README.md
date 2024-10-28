@@ -2,8 +2,6 @@
 
 Math Captcha allows you to use simple math problems for users to prove their human identity on registration and protect your site from bots.
 
-__Note:__ This is a free extension created for the community. The Ultimate Member team does not provide any support for this extension.
-
 __Note:__ This is an update of the "Ultimate Member - Math Captcha in Register forms" extension in the [Extended](https://github.com/ultimatemember/Extended/tree/main) package.
 
 ## Key features
@@ -14,6 +12,7 @@ __Note:__ This is an update of the "Ultimate Member - Math Captcha in Register f
 __Note:__ This plugin requires the [Ultimate Member](https://wordpress.org/plugins/ultimate-member/) plugin to be installed first.
 
 ### How to install from GitHub
+
 Open git bash, navigate to the plugins folder and execute this command:
 
 `git clone --branch=main git@github.com:umdevelopera/um-math-captcha.git um-math-captcha`
@@ -21,6 +20,7 @@ Open git bash, navigate to the plugins folder and execute this command:
 Once the plugin is cloned, enter your site admin dashboard and go to _wp-admin > Plugins > Installed Plugins_. Find the "Ultimate Member - Math Captcha" plugin and click the "Activate" link.
 
 ### How to install from ZIP archive
+
 You can install this plugin from the [ZIP file](https://drive.google.com/file/d/1qd0rQXfRG8hZ2SPCGbtUHKoP3j7s_uWL/view?usp=sharing) as any other plugin. Follow [this instruction](https://wordpress.org/support/article/managing-plugins/#upload-via-wordpress-admin).
 
 ## How to use
@@ -35,11 +35,16 @@ Image - Registration form with the empty Math Captcha field.
 Image - Registration form with incorrect answer in the Math Captcha field.
 ![2023-10-29_130403](https://github.com/umdevelopera/um-math-captcha/assets/113178913/abec7bfd-9a44-4115-8ce1-22e2c028a1af)
 
+## Support
+
+This is a free extension created for the community. The Ultimate Member team does not provide support for this extension.
+Open new [issue](https://github.com/umdevelopera/um-math-captcha/issues) if you are facing a problem or have a suggestion.
+
 ## Related links
 Ultimate Member home page: https://ultimatemember.com/
 
 Ultimate Member documentation: https://docs.ultimatemember.com/
 
-Ultimate Member on wordpress.org: https://wordpress.org/plugins/ultimate-member
+Ultimate Member download: https://wordpress.org/plugins/ultimate-member
 
-Old version: https://github.com/ultimatemember/Extended/tree/main/um-math-captcha
+Old version: https://ultimatemember.github.io/docs-v3/extended/article/1675-math-captcha-in-register-forms.html

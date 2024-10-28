@@ -8,13 +8,12 @@
  * Text Domain: um-math-captcha
  * Domain Path: /languages
  *
+ * Version: 1.1.0
+ * UM version: 2.8.9
  * Requires at least: 5.5
  * Requires PHP: 5.6
- * UM version: 2.7.0
- * Version: 1.1.0
  *
- * @license GPL-2.0-or-later
- * @package UM Extended
+ * @package um_ext\um_math_captcha
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
