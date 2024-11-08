@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-$plugin_data = get_plugin_data( __FILE__ );
+$plugin_data = get_plugin_data( __FILE__, true, false );
 
 define( 'um_math_captcha_url', plugin_dir_url( __FILE__ ) );
 define( 'um_math_captcha_path', plugin_dir_path( __FILE__ ) );
@@ -30,7 +30,6 @@ define( 'um_math_captcha_plugin', plugin_basename( __FILE__ ) );
 define( 'um_math_captcha_extension', $plugin_data['Name'] );
 define( 'um_math_captcha_version', $plugin_data['Version'] );
 define( 'um_math_captcha_textdomain', 'um-math-captcha' );
-define( 'um_math_captcha_requires', '2.7.0' );
 
 
 // Check dependencies.
