@@ -21,7 +21,7 @@ Once the plugin is cloned, enter your site admin dashboard and go to _wp-admin >
 
 ### How to install from ZIP archive
 
-You can install this plugin from the [ZIP file](https://drive.google.com/file/d/1qd0rQXfRG8hZ2SPCGbtUHKoP3j7s_uWL/view?usp=sharing) as any other plugin. Follow [this instruction](https://wordpress.org/support/article/managing-plugins/#upload-via-wordpress-admin).
+You can install this plugin from the [ZIP file](https://drive.google.com/file/d/1boyyaOhAJdfxxDkGdRju8048PjnoGqwF/view) as any other plugin. Follow [this instruction](https://wordpress.org/support/article/managing-plugins/#upload-via-wordpress-admin).
 
 ## How to use
 
