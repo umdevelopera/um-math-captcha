@@ -34,6 +34,10 @@ Download ZIP file from GitHub or Google Drive. You can find download links here:
 
 == Changelog ==
 
+= 1.1.1: November 17, 2024 =
+
+* Fixed: "Load textdomain just in time" issue
+
 = 1.1.0: October 29, 2023 =
 
 * Added: POT template file for translations.

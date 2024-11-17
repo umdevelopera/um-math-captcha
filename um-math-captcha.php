@@ -2,16 +2,16 @@
 /**
  * Plugin Name: Ultimate Member - Math Captcha
  * Plugin URI:  https://github.com/umdevelopera/um-math-captcha
- * Description: Adds the Math Captcha field to the registration form.
+ * Description: Adds the Math Captcha field to the registration form
  * Author:      umdevelopera
  * Author URI:  https://github.com/umdevelopera
  * Text Domain: um-math-captcha
  * Domain Path: /languages
  *
- * Version: 1.1.0
- * UM version: 2.8.9
- * Requires at least: 5.5
- * Requires PHP: 5.6
+ * Requires at least: 6.5
+ * Requires PHP: 7.4
+ * UM version: 2.9.0
+ * Version: 1.1.1
  *
  * @package um_ext\um_math_captcha
  */
@@ -36,7 +36,7 @@ define( 'um_math_captcha_textdomain', 'um-math-captcha' );
 if ( ! function_exists( 'um_math_captcha_check_dependencies' ) ) {
 	function um_math_captcha_check_dependencies() {
 		if ( ! defined( 'um_path' ) || ! function_exists( 'UM' ) || ! UM()->dependencies()->ultimatemember_active_check() ) {
-			// UM is not active.
+			// Ultimate Member is not active.
 			add_action(
 				'admin_notices',
 				function () {
