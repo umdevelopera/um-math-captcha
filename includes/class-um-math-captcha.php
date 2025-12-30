@@ -21,7 +21,6 @@ class UM_Math_Captcha {
 	 */
 	public $cpa;
 
-
 	/**
 	 * Math Captcha field's name
 	 *
@@ -29,14 +28,12 @@ class UM_Math_Captcha {
 	 */
 	public $key = 'um_math_challenge';
 
-
 	/**
 	 * An instance of the class.
 	 *
 	 * @var UM_Math_Captcha
 	 */
 	private static $instance;
-
 
 	/**
 	 * Creates an instance of the class.
@@ -50,7 +47,6 @@ class UM_Math_Captcha {
 		return self::$instance;
 	}
 
-
 	/**
 	 * UM_Math_Captch constructor.
 	 */
@@ -60,17 +56,14 @@ class UM_Math_Captcha {
 		}
 		$this->cpa = new MathCaptcha();
 
-		add_action( 'um_after_register_fields', array( $this, 'add_field' ), 10, 1 );
-		add_action( 'um_submit_form_errors_hook__registration', array( $this, 'validate' ), 10, 2 );
+		add_action( 'um_after_register_fields', array( $this, 'add_field' ) );
+		add_action( 'um_submit_form_errors_hook__registration', array( $this, 'validate' ) );
 	}
-
 
 	/**
 	 * Add Math Captcha field to the registration form.
-	 *
-	 * @param array $args UM form data.
 	 */
-	public function add_field( $args ) {
+	public function add_field() {
 		$this->cpa->reset_captcha();
 
 		$field_data = array(
@@ -86,35 +79,30 @@ class UM_Math_Captcha {
 		);
 
 		$data = apply_filters( "um_get_field__{$this->key}", $field_data );
-
 		?>
-			<div class="um-field um-field-text">
-				<?php echo UM()->fields()->field_label( $data['label'], $this->key, $data ); ?>
-				<div class="um-field-area">
-					<input type="text" name="<?php echo esc_attr( $data['name'] ); ?>" value="" placeholder="<?php echo esc_attr( $data['placeholder'] ); ?>" />
-				</div>
+		<div class="um-field um-field-text">
+			<?php echo UM()->fields()->field_label( $data['label'], $this->key, $data ); ?>
+			<div class="um-field-area">
+				<input type="text" name="<?php echo esc_attr( $data['name'] ); ?>" value="" placeholder="<?php echo esc_attr( $data['placeholder'] ); ?>" />
 			</div>
+		</div>
 		<?php
-
 		if ( UM()->fields()->is_error( $this->key ) ) {
 			$text = UM()->fields()->show_error( $this->key );
 			echo UM()->fields()->field_error( $text, $this->key );
 		}
 	}
 
-
 	/**
 	 * Validate Math Captcha field when the registration form has been submitted.
 	 *
 	 * @param array $post_form Submission array.
-	 * @param array $form_data UM form data.
 	 */
-	public function validate( $post_form, $form_data ) {
+	public function validate( $post_form ) {
 		if ( empty( $post_form[ $this->key ] ) ) {
 			UM()->form()->add_error( $this->key, __( 'Math Captcha is required.', 'um-math-captcha' ) );
 		} elseif ( ! $this->cpa->validate( $post_form[ $this->key ] ) ) {
 			UM()->form()->add_error( $this->key, __( 'Incorrect answer. Please try again.', 'um-math-captcha' ) );
 		}
 	}
-
 }

@@ -11,8 +11,8 @@
  * Requires at least: 6.5
  * Requires PHP: 7.4
  * UM version: 2.9.0
- * Version: 1.1.1
- *
+ * Version: 1.1.2
+ * Requires Plugins: ultimate-member
  * @package um_ext\um_math_captcha
  */
 
@@ -37,13 +37,19 @@ if ( ! function_exists( 'um_math_captcha_check_dependencies' ) ) {
 	function um_math_captcha_check_dependencies() {
 		if ( ! defined( 'um_path' ) || ! function_exists( 'UM' ) || ! UM()->dependencies()->ultimatemember_active_check() ) {
 			// Ultimate Member is not active.
-			add_action(
-				'admin_notices',
-				function () {
-					// translators: %s - plugin name.
-					echo '<div class="error"><p>' . wp_kses_post( sprintf( __( 'The <strong>%s</strong> extension requires the Ultimate Member plugin to be activated to work properly. You can download it <a href="https://wordpress.org/plugins/ultimate-member">here</a>', 'um-math-captcha' ), um_math_captcha_extension ) ) . '</p></div>';
-				}
-			);
+			function um_math_captcha_dependencies() {
+				$allowed_html = array(
+					'a'      => array(
+						'href'   => array(),
+						'target' => true,
+					),
+					'strong' => array(),
+					'br'     => array(),
+				);
+				// translators: %s - plugin name.
+				echo '<div class="error"><p>' . wp_kses( sprintf( __( 'The <strong>%s</strong> extension requires the Ultimate Member plugin to be activated to work properly. You can download it <a href="https://wordpress.org/plugins/ultimate-member">here</a>', 'um-math-captcha' ), um_math_captcha_extension ), $allowed_html ) . '</p></div>';
+			}
+			add_action( 'admin_notices', 'um_math_captcha_dependencies' );
 		} else {
 			require_once 'includes/class-um-math-captcha.php';
 			UM()->set_class( 'Math_Captcha', true );
